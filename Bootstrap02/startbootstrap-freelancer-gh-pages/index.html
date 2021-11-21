@@ -15,7 +15,7 @@
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Canfel - Clínica Veterinária</a>
+                <a class="navbar-brand" href="#page-top">Supermercado Lua Cheia</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -30,7 +30,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <h1 class="masthead-heading text-uppercase mb-0">Faça o cadastro do seu Pet</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Cadastre-se e Concorra:</h1>
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -72,14 +72,21 @@
 
                             <!-- Sexo radio-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="Sexo" type="radio"  data-sb-validations="required" />
-                                <label for="name">Sexo:</label>
-                                <!-- <label class="form-check-label" for="Feminino">
-                                    Feminino
-                                </label>
-                                <label class="form-check-label" for="Masculino">
-                                    Masculino
-                                </label> -->
+                                <div>
+                                    <label for="name">Sexo:</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      Feminino
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      Masculino
+                                    </label>
+                                  </div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
@@ -123,6 +130,20 @@
                                 <input class="form-control" id="name" type="text" placeholder="Escreva o CEP..." data-sb-validations="required" />
                                 <label for="name">CEP:</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Preencha com CEP válido.</div>
+                            </div>
+                            <!-- Responda a pergunta input-->
+                            <div class="form-floating mb-3">
+                                <div class="form-floating">
+                                    <div>
+                                        <label for="name">Qual o melhor mercado da região de Campinas?</label>
+                                    </div>
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Selecione o Mercador:</option>
+                                      <option value="1">Supermercado Lua Cheia</option>
+                                      <option value="2">Outros</option>
+                                    </select>
+                                </div>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Selecione a Resposta</div>
                             </div>
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
