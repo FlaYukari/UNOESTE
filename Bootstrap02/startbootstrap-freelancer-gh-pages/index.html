@@ -126,12 +126,18 @@
                                     <div>
                                         <label for="name">Qual o melhor mercado da região de Campinas?</label>
                                     </div>
-                                    <select class="form-select">
-                                        <option selected>Selecione o Mercador:</option>
+                                    <select class="form-control" style="height: 70px !important; padding: initial !important;">
+                                        <option selected>Selecione o mercado:</option>
                                         <option value="1">Supermercado Lua Cheia</option>
-                                        <option value="2">Outros</option>
+                                        <option value="2">Supermercado Higa</option>
+                                        <option value="3">Supermercado Extra</option>
+                                        <option value="4">Outros</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="Observacao" type="text" placeholder="Descreva sua observação" style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="Observacao">Observação</label>
                             </div>
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
