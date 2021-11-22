@@ -15,7 +15,7 @@
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Supermercado Lua Cheia</a>
+                <a class="navbar-brand" href="#page-top">Canfel - Clínica Veterinária</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -30,7 +30,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <h1 class="masthead-heading text-uppercase mb-0">Cadastre-se e Concorra:</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Faça o cadastro do seu Pet</h1>
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -56,21 +56,15 @@
                                 <label for="name">Nome Completo:</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
-                            <!-- Data do Cadastro input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Automático..." data-sb-validations="required" />
-                                <label for="name">Data do Cadastro:</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Data do cadastro.</div>
-                            </div>
-                            <!-- Data de Nascimento input-->
+                                <input class="form-control" id="data" type="date" placeholder="MM/DD/YYYY" data-sb-validations="required" />
+                                <label for="data">Data de Nascimento</label>
+                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Preencha o dia, mês e ano do seu aniversário..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="datetime" placeholder="Preencha o dia, mês e ano do seu aniversário..." data-sb-validations="required" />
                                 <label for="name">Data de Nascimento:</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Data de nascimento.</div>
                             </div>
-
-
-                            <!-- Sexo radio-->
                             <div class="form-floating mb-3">
                                 <div>
                                     <label for="name">Sexo:</label>
@@ -127,23 +121,9 @@
                             </div>
                             <!-- CEP input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Escreva o CEP..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="tel" placeholder="Escreva o CEP..." data-sb-validations="required" />
                                 <label for="name">CEP:</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Preencha com CEP válido.</div>
-                            </div>
-                            <!-- Responda a pergunta input-->
-                            <div class="form-floating mb-3">
-                                <div class="form-floating">
-                                    <div>
-                                        <label for="name">Qual o melhor mercado da região de Campinas?</label>
-                                    </div>
-                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                      <option selected>Selecione o Mercador:</option>
-                                      <option value="1">Supermercado Lua Cheia</option>
-                                      <option value="2">Outros</option>
-                                    </select>
-                                </div>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Selecione a Resposta</div>
                             </div>
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
@@ -400,4 +380,5 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
 </html>
