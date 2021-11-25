@@ -1,175 +1,468 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Trabalho Unoeste</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Supermercado Lua Cheia</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Cadastro</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-                <h1 class="masthead-heading text-uppercase mb-0">Cadastre-se e concorra</h1>
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <p class="masthead-subheading font-weight-light mb-0">De Flávia Yukari e Rafaela Curti de Paula</p>
-            </div>
-        </header>
-        <section class="page-section" id="contact">
-            <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cadastro:</h2>
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
 
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name"  name="Nome" type="text" placeholder="Escreva o seu nome..." data-sb-validations="required" />
-                                <label for="name">Nome Completo:</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Trabalho Unoeste</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Supermercado Lua Cheia</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#contact">Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+            <h1 class="masthead-heading text-uppercase mb-0">Cadastre-se e concorra</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="masthead-subheading font-weight-light mb-0">De Flávia Yukari e Rafaela Curti de Paula</p>
+        </div>
+    </header>
+    <section class="page-section" id="contact">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cadastro:</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" name="Nome" type="text"
+                                placeholder="Escreva o seu nome..." data-sb-validations="required" />
+                            <label for="name">Nome Completo:</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="data" name="Data" type="date" placeholder="MM/DD/YYYY"
+                                data-sb-validations="required" />
+                            <label for="data">Data de Nascimento</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div>
+                                <label for="name">Sexo:</label>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="data" name="Data" type="date" placeholder="MM/DD/YYYY" data-sb-validations="required" />
-                                <label for="data">Data de Nascimento</label>
-                             </div>
-                            <div class="form-floating mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Feminino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Masculino
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" name="Email" type="email"
+                                placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">E-mail:</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Digite um e-mail para
+                                contato.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">E-mail inválido.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" name="TelefoneFixo" type="tel"
+                                placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Telefone Fixo:</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Digite um número de telefone
+                                para contato.</div>
+                        </div>
+                        <!-- Mobilephone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" name="TelefoneCel" type="tel"
+                                placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Telefone Celular:</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Digite um número de telefone
+                                para contato.</div>
+                        </div>
+                        <!-- Endereço input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" name="EnderecoCompleto" type="text"
+                                placeholder="Escreva o seu endereço..." data-sb-validations="required" />
+                            <label for="name">Endereço Completo:</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Escreva o nome da sua rua,
+                                número e complemento, se existir.</div>
+                        </div>
+                        <!-- Cidade input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" name="Cidade" type="text"
+                                placeholder="Escolha Cidade onde mora..." data-sb-validations="required" />
+                            <label for="name">Cidade:</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">COLOCAR UMA LISTA DE CIDADE.
+                            </div>
+                        </div>
+                        <!-- Estado input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" name="Estado" type="text"
+                                placeholder="Escolha o Estado..." data-sb-validations="required" />
+                            <label for="name">Estado:</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">COLOCAR UMA LISTA DE ESTADOS.
+                            </div>
+                        </div>
+                        <!-- CEP input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" name="CEP" type="tel" placeholder="Escreva o CEP..."
+                                data-sb-validations="required" />
+                            <label for="name">CEP:</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Preencha com CEP válido.
+                            </div>
+                        </div>
+                        <!-- Pergunta input-->
+                        <div class="form-floating mb-3">
+                            <div class="form-floating">
                                 <div>
-                                    <label for="name">Sexo:</label>
+                                    <label name="Pergunta" for="name">Qual o melhor mercado da região de
+                                        Campinas?</label>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      Feminino
-                                    </label>
-                                  </div>
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                      Masculino
-                                    </label>
-                                  </div>
+                                <select class="form-control"
+                                    style="height: 70px !important; padding: initial !important;">
+                                    <option selected>Selecione o mercado:</option>
+                                    <option value="1">Supermercado Lua Cheia</option>
+                                    <option value="2">Supermercado Higa</option>
+                                    <option value="3">Supermercado Extra</option>
+                                    <option value="4">Outros</option>
+                                </select>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" name="Email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">E-mail:</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Digite um e-mail para contato.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">E-mail inválido.</div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" name="Observacao" id="Observacao" type="text"
+                                placeholder="Descreva sua observação" style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="Observacao">Observação</label>
+                        </div>
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" name="TelefoneFixo" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Telefone Fixo:</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Digite um número de telefone para contato.</div>
-                            </div>
-                            <!-- Mobilephone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" name="TelefoneCel" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Telefone Celular:</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Digite um número de telefone para contato.</div>
-                            </div>
-                            <!-- Endereço input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" name="EnderecoCompleto" type="text" placeholder="Escreva o seu endereço..." data-sb-validations="required" />
-                                <label for="name">Endereço Completo:</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Escreva o nome da sua rua, número  e complemento, se existir.</div>
-                            </div>
-                            <!-- Cidade input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" name="Cidade" type="text" placeholder="Escolha Cidade onde mora..." data-sb-validations="required" />
-                                <label for="name">Cidade:</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">COLOCAR UMA LISTA DE CIDADE.</div>
-                            </div>
-                            <!-- Estado input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" name="Estado" type="text" placeholder="Escolha o Estado..." data-sb-validations="required" />
-                                <label for="name">Estado:</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">COLOCAR UMA LISTA DE ESTADOS.</div>
-                            </div>
-                            <!-- CEP input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" name="CEP" type="tel" placeholder="Escreva o CEP..." data-sb-validations="required" />
-                                <label for="name">CEP:</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Preencha com CEP válido.</div>
-                            </div>
-                            <!-- Pergunta input-->
-                            <div class="form-floating mb-3">
-                                <div class="form-floating">
-                                    <div>
-                                        <label name="Pergunta" for="name">Qual o melhor mercado da região de Campinas?</label>
-                                    </div>
-                                    <select class="form-control" style="height: 70px !important; padding: initial !important;">
-                                        <option selected>Selecione o mercado:</option>
-                                        <option value="1">Supermercado Lua Cheia</option>
-                                        <option value="2">Supermercado Higa</option>
-                                        <option value="3">Supermercado Extra</option>
-                                        <option value="4">Outros</option>
-                                    </select>
+                        </div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error send message!</div>
+                        </div>
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Localização:</h4>
+                    <p class="lead mb-0">
+                        2215 John Daniel Drive
+                        <br />
+                        Clark, MO 65243
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <p class="lead mb-0">
+                        Freelance is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
                                 </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
                             </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" name="Observacao" id="Observacao" type="text" placeholder="Descreva sua observação" style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="Observacao">Observação</label>
-                            </div>
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error send message!</div></div>
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
+
 </html>
 <script>
     $('#submitButton').click(function () {
-            $("#contactForm").validate({
+        $("#contactForm").validate({
             errorElement: "span",
             rules: {
                 Nome: {
@@ -204,23 +497,21 @@
                 },
                 Pergunta: {
                     required: true,
-                },
-                Observacao: {
-                    required: true,
                 }
             },
             messages: {
-                Name: "O Campo Nome é obrigatório!",
-                LastName: "O Campo Sobrenome é obrigatório!",
-                Email: "O Campo Email é obrigatório!",
-                Phone: "O Campo Telefone é obrigatório!",
-                CorrespondenceAddress: "O Campo Endereço de Correspondências é obrigatório!",
-                PropertyName: "O Campo Nome da Propriedade é obrigatório!",
-                CEP: "O Campo CEP é obrigatório!",
-                CityObj_UF_Initials: "O Campo Estado é obrigatório!",
-                CityObj_Name: "O Campo Cidade é obrigatório!",
-                FarmAddress: "O Campo Endereço da Fazenda é obrigatório!",
+                Nome: "O Nome é obrigatório!",
+                Data: "A Data de Nascimento é obrigatória!",
+                flexRadioDefault: "O Sexo é obrigatório!",
+                Email: "O Email é obrigatório!",
+                TelefoneFixo: "O Telefone Fixo é obrigatório!",
+                TelefoneCel: "O Telefone Celular é obrigatório!",
+                EnderecoCompleto: "O Endereço Completo é obrigatório!",
+                Cidade: "A Cidade é obrigatória!",
+                Estado: "O Estado é obrigatório!",
+                CEP: "O CEP é obrigatório!",
+                Pergunta: "A Resposta é obrigatória!"
             }
-            });
         });
+    });
 </script>
