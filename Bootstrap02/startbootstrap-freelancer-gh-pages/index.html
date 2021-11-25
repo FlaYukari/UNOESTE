@@ -52,7 +52,7 @@
 
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Escreva o seu nome..." data-sb-validations="required" />
+                                <input class="form-control" id="name"  name="Nome" type="text" placeholder="Escreva o seu nome..." data-sb-validations="required" />
                                 <label for="name">Nome Completo:</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
@@ -396,3 +396,54 @@
     </body>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js'></script>
 </html>
+<script>
+    $('#submitButton').click(function () {
+            $("#contactForm").validate({
+            errorElement: "span",
+            rules: {
+                Nome: {
+                    required: true,
+                },
+                LastName: {
+                    required: true,
+                },
+                Email: {
+                    required: true,
+                },
+                Phone: {
+                    required: true,
+                },
+                CorrespondenceAddress: {
+                    required: true,
+                },
+                PropertyName: {
+                    required: true,
+                },
+                CEP: {
+                    required: true,
+                },
+                CityObj_UF_Initials: {
+                    required: true,
+                },
+                CityObj_Name: {
+                    required: true,
+                },
+                FarmAddress: {
+                    required: true,
+                },
+            },
+            messages: {
+                Name: "O Campo Nome é obrigatório!",
+                LastName: "O Campo Sobrenome é obrigatório!",
+                Email: "O Campo Email é obrigatório!",
+                Phone: "O Campo Telefone é obrigatório!",
+                CorrespondenceAddress: "O Campo Endereço de Correspondências é obrigatório!",
+                PropertyName: "O Campo Nome da Propriedade é obrigatório!",
+                CEP: "O Campo CEP é obrigatório!",
+                CityObj_UF_Initials: "O Campo Estado é obrigatório!",
+                CityObj_Name: "O Campo Cidade é obrigatório!",
+                FarmAddress: "O Campo Endereço da Fazenda é obrigatório!",
+            }
+            });
+        });
+</script>
